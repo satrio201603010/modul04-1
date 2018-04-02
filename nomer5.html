@@ -1,0 +1,106 @@
+<script>
+    var pemain1 = new Object()
+    pemain1.tinggi=160;
+    pemain1.umur=21;
+    pemain1.nilai_umur=pemain1.umur*5;
+    pemain1.total_nilai=pemain1.tinggi+pemain1.nilai_umur;
+    
+    console.log("Tinggi Pemain Pertama=  "+pemain1.tinggi+" cm");
+    console.log("Umur Pemain Pertama = "+pemain1.umur);
+    
+    var pemain2=new Object()
+    pemain2.tinggi=170;
+    pemain2.umur=20;
+    pemain2.nilai_umur=pemain2.umur*5;
+    pemain2.total_nilai=pemain2.tinggi+pemain2.nilai_umur;
+    
+    console.log(" ")
+    console.log("Tinggi Pemain Kedua= "+pemain2 + " cm");
+    console.log("Umur Pemain Kedua = "+pemain2.umur);
+    
+    console.log(" ")
+    console.log("Skor Nilai Pemain Pertama = "+pemain1.tinggi +" + " +pemain1.umur+" + 5 "+pemain1.total_nilai);
+    console.log("Skor Nilai Pemain kedua = "+pemain2.tinggi +" + " +pemain2.umur+" + 5 "+pemain2.total_nilai);
+    
+    console.log(" ")
+    
+    if(pemain1.total_nilai>pemain2.total_nilai)
+        {
+            console.log("Pemain Pertama Menjadi Pemenang")
+        }
+    else if(pemain1.total_nilai<pemain2.total_nilai)
+        {
+            console.log("Pemain Kedua Menjadi Pemenangnya")
+        }
+    else if(pemain1.total_nilai=pemain2.total_nilai)
+        {
+            console.log("Kedua Pemain Seri")
+        }
+    else {}
+    console.log(" ")
+    console.log("---Ketiga Pemain---")
+    console.log(" ")
+    
+    var pemain3=new Object()
+    pemain3.tinggi=180;
+    pemain3.umur=27;
+    pemain3.nilai_umur=pemain3.umur*5;
+    pemain3.total_nilai=pemain3.tinggi+pemain3.nilai_umur;
+    
+    console.log(" ")
+    console.log("Skor Nilai Pemain Pertama = "+ pemain1.tinggi+ " + "+ pemain1.umur+"*5 = "+pemain1.total_nilai);
+    console.log("Skor Nilai Pemain Kedua = "+ pemain2.tinggi+ " + "+ pemain2.umur+"*5 = "+pemain2.total_nilai);
+    console.log("Skor Nilai Pemain ketiga = "+ pemain3.tinggi+ " + "+ pemain3.umur+"*5 = "+pemain3.total_nilai);
+    
+    if(pemain2.total_nilai&&pemain3.total_nilai<pemain1.total_nilai)
+        {
+            if(pemain1.total_nilai==pemain2.total_nilai)
+                {
+                    console.log("Pemain Pertama Dan Kedua Seri")
+                }
+            else if(pemain1.total_nilai==pemain3.total_nilai)
+                {
+                    console.log("Pemain Pertama Dan Ketiga Seri")
+                }
+            else 
+                {
+                    console.log("Pemain Pertama Pemenangnya")
+                }
+        }
+else if(pemain1.total_nilai&&pemain3.total_nilai<pemain2.total_nilai)
+    {
+        if(pemain2.total_nilai==pemain1.total_nilai)
+            {
+                console.log("Pemain Kedua Dan Pertama Seri")
+            }
+        else if(pemain2.total_nilai==pemain3.total_nilai)
+            {
+                console.log("Pemain Kedua Dan Ketiga Seri")
+            }
+        else 
+            {
+                console.log("Pemain kedua Pemenangnya")
+            }
+    }
+else if(pemain1.total_nilai&&pemain2.total_nilai<pemain3.total_nilai)
+    {
+        if(pemain3.total_nilai==pemain1.total_nilai)
+            {
+                console.log("Pemain Ketiga Dan Pertama Seri")
+            }
+        else if(pemain3.total_nilai==pemain1.total_nilai)
+            {
+                console.log("Pemain Ketiga Dan Pertama Seri")
+            }
+        else 
+            {
+                console.log("Pemain ketiga Pemenangnya")
+            }
+    }
+    
+else if (pemain1.total_nilai=pemain2.total_nilai=pemain3.total_nilai)
+    {
+        console.log("Seri")
+    }
+else{}
+</script>
