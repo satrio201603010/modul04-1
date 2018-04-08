@@ -9,21 +9,28 @@
                 <span id="content"></span>
             </p>
         <script>
-            var umur, berbedaan;
-            var a=1965;
-            var b=2008;
-            var c=1992;
-            var d='true';
-            var e='false';
-            for(var p=2018; p=>2000;p--)
+            var Umur = [];
+            var Tahun = [1965,2008,1992];   
+            var A=1;
+            for (var i = 0; i < Tahun.length; i++)
+            {
+                console.log(Tahun[i]);
+            }
+            
+            for (var i = 0; i < Tahun.length; i++)
+            {
+                var Tahun_Lahir=Tahun[i];
+                var umur=2018 - Tahun_Lahir;
+                if(umur<18)
                 {
-                     if(p<a)
-                         {
-                             document.getElementById("content").innerHTML=d;
-                         }
-                    
+                    Umur.push(false);
                 }
-   
+                else if(umur>=18)
+                {
+                    Umur.push(true);
+                }
+                console.log(Umur[i]);
+            }
          </script>
     </body>
 </body>
